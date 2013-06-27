@@ -6,12 +6,14 @@ require 'pure-place/version'
 Gem::Specification.new do |s|
   s.name          = "pure-place-rails"
   s.version       = PurePlace::VERSION
+  s.homepage      = "https://github.com/matthewlehner/pure-place-rails"
   s.authors       = ["Matthew Lehner"]
   s.email         = ["matthewlehner@gmail.com"]
-  s.description   = %q{TODO: Write a gem description}
-  s.summary       = %q{TODO: Write a gem summary}
-  s.homepage      = ""
-  s.license       = "MIT"
+  s.summary       = %q{Pure css, as scss placeholders, for the Rails asset pipeline}
+  s.description   = <<-DESC
+This is Yahoo's Pure CSS framework, but with sass placeholders instead of basic css.
+It's great and you can use it with Rails 3.1+ in the asset pipeline.
+  DESC
 
   s.files         = `git ls-files`.split($/)
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
